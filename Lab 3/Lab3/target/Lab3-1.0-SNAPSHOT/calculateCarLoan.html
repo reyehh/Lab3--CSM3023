@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Car Loan</title>
+</head>
+<body>
+    <h1>Perform Car Loan Calculation</h1>
+    <form action="processCalculateCarLoan.jsp" method="post">
+        <label for="loanAmount">Loan Amount*:</label>
+        <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+        
+        <label for="Period">Period:</label>
+        <select id="Period" name="Period">
+            <option value="3">3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+            <option value="7">7 years</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+        <button type="button" onclick="cancelForm()">Cancel</button>
+    </form>
+
+    <script>
+        function cancelForm() {
+            alert("Form canceled!");
+        }
+    </script>
+</body>
+</html>
+
+
